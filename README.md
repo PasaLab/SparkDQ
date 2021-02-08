@@ -1,4 +1,3 @@
-<style>blockquote,p{margin-left:2em}</style>
 # SparkDQ
 
 This is the code repository for the big data quality management paper titled 'SparkDQ: Efficient Generic Big Data Quality Management on Distributed Data-Parallel Computing'.
@@ -23,7 +22,7 @@ To install SparkDQ, all nodes of your distributed cluster should be have an Anac
 
 # Quick Start
 
-Scala library can be packaged with the command `mvn assembly:assembly`. Packaged JARs should be put in a Python application directory.
+The Scala library can be packaged with the command `mvn assembly:assembly`. Packaged JARs should be put in a Python application directory.
 
 1. Clone source code
 ```
@@ -34,7 +33,7 @@ Scala library can be packaged with the command `mvn assembly:assembly`. Packaged
 ```
   python setup.py sdist
 ```
-An distributed installer could be found in `dist` directory.
+> An distributed installer could be found in `dist` directory.
 
 3. Deploy SparkDQ in all nodes' anaconda environment
 ```
@@ -43,18 +42,17 @@ An distributed installer could be found in `dist` directory.
 
 4. Prepare SparkDQ applications
 
-SparkDQ presents a number of test applications in `test` directory. You can use them directly, or try to write your own application accordingly.
+> SparkDQ presents a number of test applications in `test` directory. You can use them directly, or try to write your own application accordingly.
 
 5. Test SparkDQ
 
-SparkDQ presents an interactive webpage to import SparkDQ applications and run it. Launch Jupyter notebook like this: 
+> SparkDQ presents an interactive webpage to import SparkDQ applications and run it. Launch Jupyter notebook like this: 
 
 ```
   nohup $JUPYTER_PATH$ notebook > log.out 2>&1 &
 ```
 
-You can see detailed log in the directory where you run this command.
+> You can see detailed log in the directory where you run this command.
 
-After that, you can visit the webpage, like `slave001:8888`, and then import packages for tests.
-
-The default port is `8888`. You can change it according to your requirements.
+> After that, you can visit the webpage, like `slave001:8888`, and then import packages for tests.
+> The default port is `8888`. You can change it according to your requirements.
