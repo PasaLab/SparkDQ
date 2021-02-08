@@ -1,0 +1,2 @@
+recursive-include sparkdq/jars *
+recursive-include sparkdq/conf SparkDQ.ini
